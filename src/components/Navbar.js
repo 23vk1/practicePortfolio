@@ -18,9 +18,11 @@ const styles = {
 
 function Navbar() {
   return (
-    <nav style={styles.navbar}>
+    <nav  className="navbar">
         <Link to={'/'} style={styles.link}> Home </Link>
         <Link to={'/about'} style={styles.link}> About </Link>
+        <Link to={'/projects'} style={styles.link}> Projects </Link>
+        <Link to={'/contact'} style={styles.link}> Contact </Link>
     </nav>
   )
 }

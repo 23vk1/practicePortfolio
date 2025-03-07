@@ -24,6 +24,11 @@ const styles = {
     padding: "0",
     fontSize: "1.2rem",
   },
+  liItem : {
+    // width : "50px",
+    border : "1px solid rgb(4, 42, 82)",
+    padding : "5px",
+  }
 };
 function About() {
   return (
@@ -36,11 +41,11 @@ function About() {
       </p>
       <h2 style={styles.subHeading}>Skils : </h2>
       <ul style={styles.list}>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>Mongodb & Postgresql</li>
-        <li>Javascript (es6+)</li>
+        <li style={styles.liItem}>React.js</li>
+        <li style={styles.liItem}>Node.js</li>
+        <li style={styles.liItem}>Express.js</li>
+        <li style={styles.liItem}>Mongodb & Postgresql</li>
+        <li style={styles.liItem}>Javascript (es6+)</li>
       </ul>
     </div>
   );

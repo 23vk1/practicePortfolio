@@ -29,9 +29,11 @@ const Home = () => {
   return (
     <>
       <div style={styles.container}>
-        <h1 style={styles.heading}>Hi, I'm Vijay</h1>
-        <p style={styles.description}>A passionate MERN Stack Developer</p>
-        <button style={styles.button}>View my Work</button>
+        <div className="glass">
+          <h1 style={styles.heading}>Hi, I'm Vijay</h1>
+          <p style={styles.description}>A passionate MERN Stack Developer</p>
+          <button style={styles.button}>View my Work</button>
+        </div>
       </div>
     </>
   );

@@ -34,7 +34,7 @@ function Projects() {
                     <div key={index} className="card glass">
                     <h2>{project.name}</h2>
                     <p>{project.description}</p>
-                    <a href="https://google.com" target="blank" rel="noopener noreferrer" className="btn">View Project</a>
+                    <button><a href="https://google.com" target="blank" rel="noopener noreferrer" className="btn">View Project</a></button>
                 </div>
                 )
             })

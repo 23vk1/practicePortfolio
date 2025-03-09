@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
@@ -17,38 +16,27 @@ function Navbar() {
     }
   }, [darkMode]);
 
-  return (
-<>
 
+
+  return (
     <nav className="navbar">
       <h1>Portfolio</h1>
 
-     
-      <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-        <Link to={"/"} onClick={() => setMenuOpen(false)}>
-          Home
-        </Link>
-        <Link to={"/about"} onClick={() => setMenuOpen(false)}>
-          About
-        </Link>
-        <Link to={"/projects"} onClick={() => setMenuOpen(false)}>
-          Projects
-        </Link>
-        <Link to={"/contact"} onClick={() => setMenuOpen(false)}>
-          Contact
-        </Link>
-        <button className="dark-mode-btn"
+      <div className={`nav-links`}>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/about"}>About</Link>
+        <Link to={"/projects"}>Projects</Link>
+        <Link to={"/contact"}>Contact</Link>
+        <button
+          className="dark-mode-btn"
           onClick={() => {
             setDarkMode(!darkMode);
           }}
         >
-          {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+          {darkMode ? "🌞" : "🌙"}
         </button>
       </div>
     </nav>
-
-</>
-
   );
 }
 

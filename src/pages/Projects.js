@@ -21,54 +21,20 @@ const ProjectList = [
   },
 ];
 
-const styles = {
-    container : {
-        textAlign : "center",
-        padding :"50px",
-    },
-    heading : {
-        fontSize : "2.5rem",
-        marginBottom : "20px",
-    },
-    projectGrid : {
-        display : "grid",
-        gridTemplateColumn : "repeat (auto-fit, minmax(300px, 1fr))",
-        gap :"20px",
-        maxWidth : "800px",
-        margin : "auto",
-    },
-    card : {
-        padding : "20px",
-        border :"1px solid #ddd",
-        borderRadius : "10px",
-        backgroundColor : "#f9f9f9",
-        color:"black"
-    },
-    link : {
-        display : "inline-block",
-        marginTop : "10px",
-        padding :"8px 15px",
-        backgroundColor : "#007BFF",
-        color :"black",
-        textDecoration :"none",
-        borderRadius : "5px",
-    }
-
-}
 
 function Projects() {
   return (
-  <div style={styles.container}>
-    <h1 style={styles.heading}>My Projects</h1>
-    <div style={styles.projectGrid}>
+  <div id="projects-section" className="container">
+    <h1 className="title">My Projects</h1>
+    <div className="projects-grid">
         {
             ProjectList.map((project, index)=>{
                 return(
 
-                    <div key={index} style={styles.card}>
+                    <div key={index} className="card glass">
                     <h2>{project.name}</h2>
                     <p>{project.description}</p>
-                    <a href="https://google.com" target="blank" rel="noopener noreferrer" style={styles.link}>View Project</a>
+                    <a href="https://google.com" target="blank" rel="noopener noreferrer" className="btn">View Project</a>
                 </div>
                 )
             })

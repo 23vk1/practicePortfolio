@@ -1,38 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const styles = {
-  container: {
-    textAlign: "center",
-    padding: "50px",
-  },
 
-  heading: {
-    fontSize: "2.5rem",
-  },
-
-  description: {
-    fontSize: "1.2rem",
-    color: "grey",
-  },
-  button: {
-    backgroundColor: "#007BFF",
-    color: "white",
-    padding: "10px, 20px",
-    fontSize: "1rem",
-    border: "none",
-    cursor: "pointer",
-    marginTop: "20px",
-  },
-};
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const goToProject = () =>{
+    navigate("/projects");
+  }
+
   return (
     <>
-      <div style={styles.container}>
+      <div className="container">
         <div className="glass">
-          <h1 style={styles.heading}>Hi, I'm Vijay</h1>
-          <p style={styles.description}>A passionate MERN Stack Developer</p>
-          <button style={styles.button}>View my Work</button>
+          <h1 >Hi, I'm Vijay</h1>
+          <p >A passionate MERN Stack Developer</p>
+          <button onClick={goToProject}>View my Work</button>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ const ProjectList = [
     description:
       "A full-stack MERN application for managing hospital records, appointments, and patient data.",
     image: "/images/demo_img.jpg",
-    link: "https://github.com/23vk1",
+    link: "https://github.com/23vk1/hospital_management_system",
   },
   {
     title: "News App",

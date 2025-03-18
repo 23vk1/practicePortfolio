@@ -13,15 +13,15 @@ function Contact() {
 
         <div className="contact-info">
           <p>
-            Email:{" "}
-            <a href="https://google.com" className="contact-link">
+            Email{" "}
+            <a href="mailto:vkmakwana1122@yahoo.com" className="contact-link">
               <FaEnvelope className="contact-icon" /> vijay
             </a>
           </p>
           <p>
-            GitHub:{" "}
+            GitHub{" "}
             <a
-              href="https://google.com"
+              href="https://github.com/23vk1"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
@@ -30,9 +30,9 @@ function Contact() {
             </a>
           </p>
           <p>
-            LinkdIn:{" "}
+            LinkdIn{" "}
             <a
-              href="https://google.com"
+              href="https://www.linkedin.com/in/vijay-k-makwana/"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"

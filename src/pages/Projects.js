@@ -6,35 +6,35 @@ const ProjectList = [
     description:
       "A full-stack MERN application for managing hospital records, appointments, and patient data.",
     image: "/images/demo_img.jpg",
-    link: "https://github.com/",
+    link: "https://github.com/23vk1",
   },
   {
     title: "News App",
     description:
       "A React-based news aggregator fetching real-time news from APIs.",
     image: "/images/demo_img.jpg",
-    link: "https://github.com/",
+    link: "https://github.com/23vk1/NewsApp",
   },
   {
     title: "Text-Utils",
     description:
       "A simple React app for text formatting and manipulation, including word count and case conversion.",
     image: "/images/demo_img.jpg",
-    link: "https://github.com/",
+    link: "https://github.com/23vk1/TextUtils-React",
   },
   {
     title: "Chat App",
     description:
       "A Node.js-based real-time chat application with user authentication and messaging.",
     image: "/images/demo_img.jpg",
-    link: "https://github.com/",
+    link: "https://github.com/23vk1/chatapp",
   },
   {
     title: "Book Management System",
     description:
       "A MERN-based system for managing books, authors, and categories in a library.",
     image: "/images/demo_img.jpg",
-    link: "https://github.com/",
+    link: "https://github.com/23vk1/book_management_system",
   },
 ];
 

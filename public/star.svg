@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 500 500"
+  width="500"
+  height="500"
+>
+  <polygon
+    points="250,40  320,190  480,190  350,290 
+            400,450  250,360  100,450  150,290 
+            20,190  180,190"
+    fill="none"
+    stroke="black"
+    stroke-width="5"
+  />
+</svg>

@@ -2,46 +2,73 @@ import React from "react";
 
 const ProjectList = [
   {
-    name: "Chat Web App",
+    title: "Hospital Management System",
     description:
-      "A real-time chat application using Node.js, Express, and Socket.io.",
-    link: "https://github.com/yourusername/chat-app",
+      "A full-stack MERN application for managing hospital records, appointments, and patient data.",
+    image: "/images/demo_img.jpg",
+    link: "https://github.com/",
   },
   {
-    name: "Portfolio Website",
+    title: "News App",
     description:
-      "A personal portfolio website built with React.js and hosted on Vercel.",
-    link: "https://yourportfolio.com",
+      "A React-based news aggregator fetching real-time news from APIs.",
+    image: "/images/demo_img.jpg",
+    link: "https://github.com/",
   },
   {
-    name: "YouTube Video Downloader",
+    title: "Text-Utils",
     description:
-      "A web app to download YouTube videos using Node.js and React.",
-    link: "https://github.com/yourusername/youtube-downloader",
+      "A simple React app for text formatting and manipulation, including word count and case conversion.",
+    image: "/images/demo_img.jpg",
+    link: "https://github.com/",
+  },
+  {
+    title: "Chat App",
+    description:
+      "A Node.js-based real-time chat application with user authentication and messaging.",
+    image: "/images/demo_img.jpg",
+    link: "https://github.com/",
+  },
+  {
+    title: "Book Management System",
+    description:
+      "A MERN-based system for managing books, authors, and categories in a library.",
+    image: "/images/demo_img.jpg",
+    link: "https://github.com/",
   },
 ];
 
-
 function Projects() {
   return (
-  <div id="projects-section" className="container">
-    <h1 className="title">My Projects</h1>
-    <div className="projects-grid">
-        {
-            ProjectList.map((project, index)=>{
-                return(
-
-                    <div key={index} className="card glass">
-                    <h2>{project.name}</h2>
-                    <p>{project.description}</p>
-                    <button><a href="https://google.com" target="blank" rel="noopener noreferrer" className="btn">View Project</a></button>
-                </div>
-                )
-            })
-        }
+    <div id="projects-section" className="container">
+      <h1 className="title">My Projects</h1>
+      <div className="projects-grid">
+        {ProjectList.map((project, index) => {
+          return (
+            <div key={index} className="card glass">
+              <img
+                src={project.image}
+                alt={project.title}
+                style={{ width: "100%", borderRadius: "10px" }}
+              />
+              <h2>{project.name}</h2>
+              <p>{project.description}</p>
+              <button>
+                <a
+                  href={project.link}
+                  target="blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  View Project
+                </a>
+              </button>
+            </div>
+          );
+        })}
+      </div>
     </div>
-  </div>
-)
+  );
 }
 
 export default Projects;
